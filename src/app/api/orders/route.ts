@@ -7,19 +7,16 @@ export async function POST(request: NextRequest) {
 
   const { error } = await supabase
     .from('orders')
-    .insert(
-      [
-        {
-          name: body.name,
-          email: body.email,
-          phone: body.phone,
-          selections: body.selections, // JSON object
-          pickup_date: body.pickupDate,
-          notes: body.notes,
-        },
-      ],
-      { returning: 'minimal' } // Prevents implicit select, avoids RLS violation on read
-    );
+    .insert([
+      {
+        name: body.name,
+        email: body.email,
+        phone: body.phone,
+        selections: body.selections, // JSON object
+        pickup_date: body.pickupDate,
+        notes: body.notes,
+      },
+    ]);
 
   if (error) {
     console.error('Supabase insert error:', error);
