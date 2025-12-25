@@ -5,7 +5,7 @@ export default function About() {
       <div>
         <h2 className="text-2xl font-serif mb-4">Our Story</h2>
         <p>
-          Palm and Pastry was inspired by the Christian symbolism of the palm tree—representing victory and righteousness—Palm & Pastry brings you dairy-free scones crafted with care. Drawing from Psalm 92:12, we aim to nourish both body and spirit.
+          Inspired by the Christian symbolism of the palm tree—representing victory and righteousness—Palm & Pastry brings you dairy-free scones crafted with care. Drawing from Psalm 92:12, we aim to nourish both body and spirit.
         </p>
       </div>
       <div>
